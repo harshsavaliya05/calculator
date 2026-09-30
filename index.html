@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ShopEasy | E-Commerce</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="calculator">
+         <div class="screen">
+            <div class="history">
+             <button class="historybtn">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+             </button>
+             </div>
+
+             <div id="historyPopup" class="popup">
+                   <div class="popup-content">
+                   <span class="close">&times;</span>
+                   <button class="clearbtn">clear history</button>
+                   <button class="saveHistoryBtn">Save History</button>
+                   <h3>Calculation History</h3>
+                   
+
+                 <div class="date-filter" style="margin-bottom:10px;">
+                   <input type="date" id="fromDate">
+                   <input type="date" id="toDate">
+                   <button id="filterBtn">Filter</button>
+                    <button id="resetFilterBtn">All</button>
+                    <button id="deleteRangeBtn">Delete Range</button>
+                 </div>
+
+
+                   <ol id="historyList"></ol>
+                  </div>
+             </div>
+
+          <input type="text" class="display" placeholder="00" readonly>
+            <div class="switchh">
+                <button class="btn" id="btn7" type="button">7</button>
+                <button class="btn" id="btn8" type="button">8</button>
+                <button class="btn" id="btn9" type="button">9</button>
+                <button class="btn" id="btn-div" type="button">/</button>
+                <button class="btn" id="btn4" type="button">4</button>
+                <button class="btn" id="btn5" type="button">5</button>
+                <button class="btn" id="btn6" type="button">6</button>
+                <button class="btn" id="btn-mul" type="button">X</button>
+                <button class="btn" id="btn1" type="button">1</button>
+                <button class="btn" id="btn2" type="button">2</button>
+                <button class="btn" id="btn3" type="button">3</button>
+                <button class="btn" id="btn-min" type="button">-</button>
+                <button class="btn" id="btn0" type="button">0</button>
+                <button class="btn" id="dot" type="button">.</button>
+                <button class="btn" id="equal" type="button">=</button>
+                <button class="btn" id="plus" type="button">+</button>
+                <button class="btn" id="remove" type="button">c</button>
+                <button class="btn" id="back" type="button">⌫</button>
+
+            </div>
+         </div>
+    </div>
+            
+         <button id="modeBtn">Change Color</button>
+         <!-- <button id="normal">click me</button>
+         <button id="stop1">stop</button> -->
+
+
+<script src="first.js"></script>
+</body>
+</html>
